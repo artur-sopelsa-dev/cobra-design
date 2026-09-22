@@ -31,7 +31,8 @@
   background: radial-gradient(circle, color-mix(in srgb, var(--color-accent) 22%, transparent), transparent 70%);
   pointer-events: none;
   z-index: -1;
-  will-change: transform;
+  opacity: 0;
+  will-change: transform, opacity;
 }
 
 .hero-wordmark {

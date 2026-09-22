@@ -21,6 +21,10 @@ export function initHeroParallax(root: ParentNode = document) {
 
   if (wordmark) gsap.set(wordmark, { transformPerspective: 800 });
 
+  hero.addEventListener('mouseenter', () => {
+    if (spotlight) gsap.to(spotlight, { opacity: 1, duration: 0.4 });
+  });
+
   hero.addEventListener('mousemove', (e) => {
     const rect = hero.getBoundingClientRect();
     const relX = e.clientX - rect.left;
@@ -38,5 +42,6 @@ export function initHeroParallax(root: ParentNode = document) {
   hero.addEventListener('mouseleave', () => {
     xToTilt?.(0);
     yToTilt?.(0);
+    if (spotlight) gsap.to(spotlight, { opacity: 0, duration: 0.4 });
   });
 }
