@@ -68,9 +68,9 @@
   --color-off-white-1: #f2f1ec;
   --color-off-white-2: #e7e5da;
 
-  /* Accent — Cobra green (placeholder shade, swap for the exact brand hex) */
-  --color-accent: #1db954;
-  --color-accent-off: #169c47;
+  /* Accent — Cobra brand green */
+  --color-accent: #9eeb47;
+  --color-accent-off: #86c83c;
 
   --color-grey-1: #6b6b6b;
   --color-grey-2: #9a9a9a;

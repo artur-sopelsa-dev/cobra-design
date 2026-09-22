@@ -1,8 +1,9 @@
 import { gsap, ScrollTrigger } from '../core/gsap';
 
 /**
- * Animates [data-reveal-sweep] across its section on a diagonal clip-path,
- * mirroring the reference site's diagonal-line reveal transition.
+ * Sweeps [data-reveal-sweep] — a thin diagonal accent line — across its
+ * section, mirroring the reference site's diagonal-line sweep over the
+ * portrait card rather than a full color-panel flood.
  */
 export function initRevealSweeps(root: ParentNode = document) {
   const sections = root.querySelectorAll<HTMLElement>('[data-reveal]');
@@ -12,11 +13,11 @@ export function initRevealSweeps(root: ParentNode = document) {
 
     gsap.fromTo(
       sweep,
-      { clipPath: 'polygon(0 0, 0 0, 0 100%, 0 100%)' },
+      { xPercent: -150 },
       {
-        clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0 100%)',
-        duration: 1.1,
-        ease: 'power3.inOut',
+        xPercent: 150,
+        duration: 1.4,
+        ease: 'power2.inOut',
         scrollTrigger: {
           trigger: section,
           start: 'top 65%',
