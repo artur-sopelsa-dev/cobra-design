@@ -9,6 +9,7 @@ import { initHorizontalScrollSections } from './components/horizontalScroll';
 import { initHeroPin } from './components/heroPin';
 import { initRevealSweeps } from './components/revealSweep';
 import { initStatsCounters } from './components/statsCounter';
+import { initScrollReveals } from './components/scrollReveal';
 
 function init() {
   initLenis();
@@ -16,6 +17,7 @@ function init() {
   initHeroPin();
   initSplitTextReveals();
   initRevealSweeps();
+  initScrollReveals();
   initMarquees();
   initCountdowns();
   initAccordions();
