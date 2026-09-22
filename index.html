@@ -56,45 +56,6 @@
         <div data-hero-reveal class="hero-reveal-bg"></div>
         <div data-hero-spotlight class="hero-spotlight"></div>
         <div class="hero-grain"></div>
-        <svg data-hero-snake class="hero-snake" viewBox="0 0 1000 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-          <defs>
-            <linearGradient id="snakeBodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="var(--color-accent-off)" />
-              <stop offset="50%" stop-color="var(--color-accent)" />
-              <stop offset="100%" stop-color="var(--color-accent-off)" />
-            </linearGradient>
-            <filter id="snakeShadow" x="-30%" y="-30%" width="160%" height="160%">
-              <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.4" />
-            </filter>
-          </defs>
-          <path
-            data-hero-snake-spine
-            d="M100,200 C100,80 300,20 500,20 C700,20 900,80 900,200 C900,320 700,380 500,380 C300,380 100,320 100,200 Z"
-            fill="none"
-            stroke="url(#snakeBodyGradient)"
-            stroke-width="26"
-            stroke-linecap="round"
-            filter="url(#snakeShadow)"
-          />
-          <path
-            data-hero-snake-highlight
-            d="M100,200 C100,80 300,20 500,20 C700,20 900,80 900,200 C900,320 700,380 500,380 C300,380 100,320 100,200 Z"
-            fill="none"
-            stroke="rgba(255,255,255,0.32)"
-            stroke-width="6"
-            stroke-linecap="round"
-            style="mix-blend-mode: screen"
-          />
-          <g data-hero-snake-head>
-            <path
-              d="M-18,0 C-18,-11 -5,-18 13,-11 L24,0 L13,11 C-5,18 -18,11 -18,0 Z"
-              fill="url(#snakeBodyGradient)"
-              filter="url(#snakeShadow)"
-            />
-            <circle cx="7" cy="-4.5" r="2.6" fill="var(--color-ink)" />
-            <circle cx="7" cy="4.5" r="2.6" fill="var(--color-ink)" />
-          </g>
-        </svg>
         <h1 class="screen-reader">Cobra — Estúdio de Design e Experiências Digitais</h1>
         <div data-hero-wordmark class="hero-wordmark">COBRA</div>
         <div class="hero-scroll-hint">Role para explorar</div>

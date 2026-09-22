@@ -7,7 +7,6 @@ import { initCountdowns } from './components/countdown';
 import { initAccordions } from './components/accordion';
 import { initHorizontalScrollSections } from './components/horizontalScroll';
 import { initHeroPin } from './components/heroPin';
-import { initHeroSnake } from './components/heroSnake';
 import { initRevealSweeps } from './components/revealSweep';
 import { initStatsCounters } from './components/statsCounter';
 import { initScrollReveals } from './components/scrollReveal';
@@ -20,7 +19,6 @@ function init() {
   initNav();
   initCustomCursor();
   initHeroPin();
-  initHeroSnake();
   initHeroParallax();
   initSplitTextReveals();
   initRevealSweeps();

@@ -15,7 +15,6 @@ export function initHeroPin(root: ParentNode = document) {
   const wordmark = hero.querySelector<HTMLElement>('[data-hero-wordmark]');
   const sub = hero.querySelector<HTMLElement>('[data-hero-sub]');
   const reveal = hero.querySelector<HTMLElement>('[data-hero-reveal]');
-  const snake = hero.querySelector<HTMLElement>('[data-hero-snake]');
   if (!wordmark) return;
 
   const split = new SplitType(wordmark, { types: 'chars' as any, tagName: 'span' });
@@ -52,5 +51,4 @@ export function initHeroPin(root: ParentNode = document) {
 
   if (reveal) tl.to(reveal, { opacity: 1, scale: 1.1, ease: 'power1.inOut' }, 0);
   if (sub) tl.to(sub, { opacity: 0, ease: 'power1.in' }, 0);
-  if (snake) tl.to(snake, { opacity: 0, scale: 1.2, ease: 'power1.in' }, 0);
 }

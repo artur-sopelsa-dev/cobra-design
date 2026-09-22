@@ -60,18 +60,6 @@
   background-size: 180px 180px;
 }
 
-.hero-snake {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: min(58rem, 92vw);
-  height: auto;
-  aspect-ratio: 1000 / 400;
-  z-index: 0;
-  overflow: visible;
-  pointer-events: none;
-}
-
 .hero-wordmark {
   position: relative;
   z-index: 1;
