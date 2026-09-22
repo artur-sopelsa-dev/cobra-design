@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Horizontal scroll — pinned section whose track pans horizontally
+   as the page scrolls vertically past it (see horizontalScroll.ts)
+   ========================================================================== */
+
+[data-hscroll] {
+  overflow: clip;
+}
+
+[data-hscroll-track] {
+  display: flex;
+  align-items: stretch;
+  width: max-content;
+  will-change: transform;
+}
+
+[data-hscroll-track] > * {
+  flex-shrink: 0;
+}
