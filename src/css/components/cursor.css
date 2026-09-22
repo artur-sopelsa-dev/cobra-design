@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Custom cursor — follower dot, hidden until JS confirms a fine pointer
+   ========================================================================== */
+
+.has-custom-cursor {
+  cursor: none;
+}
+.has-custom-cursor a,
+.has-custom-cursor button {
+  cursor: none;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.cursor-dot-inner {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: -0.75rem;
+  margin-top: -0.75rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  mix-blend-mode: difference;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.cursor-dot.is-hover .cursor-dot-inner {
+  transform: scale(2.4);
+}
+
+.cursor-dot.is-down .cursor-dot-inner {
+  transform: scale(0.7);
+}

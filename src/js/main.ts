@@ -10,11 +10,16 @@ import { initHeroPin } from './components/heroPin';
 import { initRevealSweeps } from './components/revealSweep';
 import { initStatsCounters } from './components/statsCounter';
 import { initScrollReveals } from './components/scrollReveal';
+import { initCustomCursor } from './components/cursor';
+import { initHeroParallax } from './components/heroParallax';
+import { initCardTilt } from './components/cardTilt';
 
 function init() {
   initLenis();
   initNav();
+  initCustomCursor();
   initHeroPin();
+  initHeroParallax();
   initSplitTextReveals();
   initRevealSweeps();
   initScrollReveals();
@@ -23,6 +28,7 @@ function init() {
   initAccordions();
   initHorizontalScrollSections();
   initStatsCounters();
+  initCardTilt();
 }
 
 if (document.readyState === 'loading') {
