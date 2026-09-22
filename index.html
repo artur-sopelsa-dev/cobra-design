@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cobra — Design</title>
+    <meta name="description" content="Cobra — TODO: descrição da agência" />
+  </head>
+  <body>
+    <nav data-nav-wrap data-nav-theme="light" class="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand-link" title="Cobra Home">
+          <div class="nav-brand">COBRA</div>
+        </a>
+        <div class="btn-layout is-nav">
+          <button data-nav-ham class="nav-ham" title="Abrir / Fechar menu" aria-expanded="false">
+            <span class="screen-reader">Menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div data-nav-m class="nav-menu-w">
+      <div class="nav-menu-bg"></div>
+      <div class="nav-menu-inner c">
+        <div class="nav-menu-links-list">
+          <a href="/" class="nav-menu-link-w">
+            <div split-text="chars" class="text-nav-link">Home</div>
+          </a>
+          <a href="/work" class="nav-menu-link-w">
+            <div split-text="chars" class="text-nav-link">Work</div>
+          </a>
+          <a href="/studio" class="nav-menu-link-w">
+            <div split-text="chars" class="text-nav-link">Studio</div>
+          </a>
+          <a href="/contact" class="nav-menu-link-w">
+            <div split-text="chars" class="text-nav-link">Contact</div>
+          </a>
+        </div>
+        <div class="nav-menu-social-w">
+          <a href="mailto:hello@cobra.design" class="text-link-w">
+            <div class="text-clip-w"><div split-text="chars" class="btn-text">hello@cobra.design</div></div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main id="app">
+      <section data-nav-theme-target="light" class="s home-hero">
+        <div class="c">
+          <h1 class="screen-reader">Cobra — Design Agency</h1>
+          <div style="min-height: 100vh; display: flex; align-items: center;">
+            <div split-text="lines" style="font-size: 4rem; font-weight: 700;">
+              TODO: hero da Cobra
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-nav-theme-target="dark" class="s" style="background: var(--color-ink); min-height: 60vh; display:flex; align-items:center;">
+        <div class="c">
+          <div split-text="lines" style="font-size: 2rem;">TODO: próxima seção</div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/main.ts"></script>
+  </body>
+</html>

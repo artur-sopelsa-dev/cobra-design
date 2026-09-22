@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Layout primitives — container, sections, main grid
+   ========================================================================== */
+
+.c {
+  width: 100%;
+  max-width: 120rem;
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+  position: relative;
+}
+
+.s {
+  position: relative;
+  width: 100%;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gap);
+}
+
+.spacer {
+  width: 100%;
+}
+
+[overflow-clip='x'] {
+  overflow-x: clip;
+}
+
+[display-none],
+.display-none {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+  [data-hide='t'] {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  [data-hide='ml'] {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 497px) {
+  [data-hide='m'] {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  [data-hide='d'] {
+    display: none !important;
+  }
+}
