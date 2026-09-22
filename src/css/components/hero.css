@@ -16,7 +16,20 @@
   position: absolute;
   inset: -10%;
   background: radial-gradient(circle at 50% 40%, var(--color-ink-tint-2), var(--color-ink) 70%);
-  z-index: -1;
+  z-index: -3;
+}
+
+/* Revealed behind the wordmark as its characters disperse on scroll */
+.hero-reveal-bg {
+  position: absolute;
+  inset: -10%;
+  background:
+    radial-gradient(circle at 32% 30%, color-mix(in srgb, var(--color-accent) 60%, transparent), transparent 58%),
+    radial-gradient(circle at 70% 72%, color-mix(in srgb, var(--color-accent) 38%, transparent), transparent 55%),
+    var(--color-ink);
+  opacity: 0;
+  z-index: -2;
+  will-change: transform, opacity;
 }
 
 .hero-spotlight {
@@ -35,13 +48,31 @@
   will-change: transform, opacity;
 }
 
+/* Subtle grain for depth — pure SVG noise, no external asset */
+.hero-grain {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
 .hero-wordmark {
+  position: relative;
+  z-index: 1;
   font-size: clamp(4rem, 14vw, 14rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 0.9;
   text-transform: uppercase;
   color: var(--color-white);
+  will-change: transform, opacity;
+}
+
+.hero-wordmark .char {
   will-change: transform, opacity;
 }
 
