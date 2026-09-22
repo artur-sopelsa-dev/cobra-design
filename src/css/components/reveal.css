@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Reveal — diagonal clip-path sweep revealing a quote/statement section
+   ========================================================================== */
+
+.reveal-s {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding-block: 8rem;
+}
+
+.reveal-quote {
+  max-width: 50rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: clamp(1.75rem, 4vw, 3.25rem);
+  line-height: 1.25;
+}
+
+.reveal-sweep {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-accent);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  z-index: -1;
+}
+
+.reveal-sig {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: var(--color-grey-2);
+}

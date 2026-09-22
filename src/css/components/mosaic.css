@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Mosaic — scattered, uneven photo/work teaser grid
+   ========================================================================== */
+
+.mosaic-s {
+  padding-block: 8rem;
+}
+
+.mosaic-heading {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  max-width: 34rem;
+  margin-bottom: 4rem;
+}
+
+.mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.mosaic-item {
+  border-radius: 0.75rem;
+  overflow: clip;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(155deg, var(--color-ink-tint-2), var(--color-ink));
+  position: relative;
+}
+
+.mosaic-item.is-a {
+  grid-column: span 4;
+  margin-top: 3rem;
+}
+.mosaic-item.is-b {
+  grid-column: span 5;
+  aspect-ratio: 5 / 4;
+}
+.mosaic-item.is-c {
+  grid-column: span 3;
+  margin-top: 6rem;
+}
+.mosaic-item.is-d {
+  grid-column: span 6;
+  aspect-ratio: 16 / 9;
+}
+.mosaic-item.is-e {
+  grid-column: span 6;
+  aspect-ratio: 16 / 9;
+  margin-top: 2rem;
+}
+
+.mosaic-item-label {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-grey-2);
+}
+
+@media screen and (max-width: 767px) {
+  .mosaic-item.is-a,
+  .mosaic-item.is-b,
+  .mosaic-item.is-c,
+  .mosaic-item.is-d,
+  .mosaic-item.is-e {
+    grid-column: span 12;
+    margin-top: 0;
+  }
+}

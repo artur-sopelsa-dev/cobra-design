@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cobra — Estúdio de Design</title>
-    <meta
-      name="description"
-      content="Cobra é um estúdio de design e experiências digitais. Criamos marcas, sites e produtos memoráveis."
-    />
+    <title>Work — Cobra</title>
+    <meta name="description" content="Projetos de branding, produto digital e web criados pelo estúdio Cobra." />
   </head>
   <body>
     <nav data-nav-wrap data-nav-theme="light" class="nav">
@@ -50,86 +47,65 @@
     </div>
 
     <main id="app">
-      <!-- Hero — pinned, scroll-scrubbed wordmark -->
-      <section data-hero data-nav-theme-target="light" class="s hero">
-        <div class="hero-bg-shape"></div>
-        <h1 class="screen-reader">Cobra — Estúdio de Design e Experiências Digitais</h1>
-        <div data-hero-wordmark class="hero-wordmark">COBRA</div>
-        <div class="hero-scroll-hint">Role para explorar</div>
-        <div data-hero-sub class="hero-sub c">
-          <p class="hero-sub-copy">
-            Estúdio de design e experiências digitais. Criamos marcas, sites e produtos que ficam.
+      <section data-nav-theme-target="light" class="s" style="padding-top: 12rem; padding-bottom: 4rem;">
+        <div class="c">
+          <h1 split-text="lines" style="font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 700; letter-spacing: -0.02em;">
+            Trabalhos que constroem marcas.
+          </h1>
+          <p style="max-width: 34rem; margin-top: 1.5rem; color: var(--color-grey-2); font-size: 1.1rem;">
+            Uma seleção de projetos de branding, produto digital e experiências web que desenvolvemos com nossos
+            clientes.
           </p>
-          <div class="hero-badge">
-            <span class="hero-badge-label">Projeto em destaque</span>
-            <span class="hero-badge-value">Em breve — 2026</span>
-          </div>
         </div>
       </section>
 
-      <!-- Reveal — diagonal sweep + statement -->
-      <section data-reveal data-nav-theme-target="light" class="s reveal-s">
-        <div data-reveal-sweep class="reveal-sweep"></div>
-        <div class="c">
-          <div split-text="lines" class="reveal-quote">
-            Não importa de onde você começa. Importa como você constrói a partir daí.
-          </div>
-          <div class="reveal-sig">— Estúdio Cobra</div>
-        </div>
-      </section>
-
-      <!-- Mosaic — selected work teaser -->
-      <section data-theme="light" data-nav-theme-target="dark" class="s mosaic-s">
-        <div class="c">
-          <div split-text="lines" class="mosaic-heading">Projetos selecionados, construídos com propósito.</div>
-          <div class="mosaic-grid">
-            <div class="mosaic-item is-a"><span class="mosaic-item-label">Branding</span></div>
-            <div class="mosaic-item is-b"><span class="mosaic-item-label">Produto Digital</span></div>
-            <div class="mosaic-item is-c"><span class="mosaic-item-label">Identidade</span></div>
-            <div class="mosaic-item is-d"><span class="mosaic-item-label">Motion</span></div>
-            <div class="mosaic-item is-e"><span class="mosaic-item-label">Web</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Horizontal scroll — selected work reel -->
-      <section data-hscroll data-nav-theme-target="light" class="s" style="background: var(--color-ink); padding-block: 6rem 0;">
-        <div class="c" style="margin-bottom: 3rem;">
-          <div split-text="lines" style="font-size: 2rem; max-width: 30rem;">Um recorte do que já colocamos no mundo.</div>
-        </div>
-        <div data-hscroll-track class="c" style="display: flex; padding-bottom: 6rem;">
-          <a href="/work" class="work-reel-card">
+      <section data-nav-theme-target="light" class="s" style="padding-bottom: 8rem;">
+        <div class="c work-grid">
+          <a href="/work" class="work-card">
             <div class="work-card-media"></div>
             <div class="work-card-meta">
               <span class="work-card-title">Projeto Aurora</span>
               <span class="work-card-tag">Branding</span>
             </div>
           </a>
-          <a href="/work" class="work-reel-card">
+          <a href="/work" class="work-card">
             <div class="work-card-media"></div>
             <div class="work-card-meta">
               <span class="work-card-title">Projeto Norte</span>
-              <span class="work-card-tag">Produto</span>
+              <span class="work-card-tag">Produto Digital</span>
             </div>
           </a>
-          <a href="/work" class="work-reel-card">
+          <a href="/work" class="work-card">
             <div class="work-card-media"></div>
             <div class="work-card-meta">
               <span class="work-card-title">Projeto Vento</span>
               <span class="work-card-tag">Web</span>
             </div>
           </a>
-          <a href="/work" class="work-reel-card">
+          <a href="/work" class="work-card">
             <div class="work-card-media"></div>
             <div class="work-card-meta">
               <span class="work-card-title">Projeto Eco</span>
-              <span class="work-card-tag">Identidade</span>
+              <span class="work-card-tag">Identidade Visual</span>
+            </div>
+          </a>
+          <a href="/work" class="work-card">
+            <div class="work-card-media"></div>
+            <div class="work-card-meta">
+              <span class="work-card-title">Projeto Cinza</span>
+              <span class="work-card-tag">Motion</span>
+            </div>
+          </a>
+          <a href="/work" class="work-card">
+            <div class="work-card-media"></div>
+            <div class="work-card-meta">
+              <span class="work-card-title">Projeto Sul</span>
+              <span class="work-card-tag">Branding</span>
             </div>
           </a>
         </div>
       </section>
 
-      <!-- Stats -->
       <section data-nav-theme-target="light" class="s" style="background: var(--color-ink); padding-block: 6rem;">
         <div class="c" data-stats-grid>
           <div class="stat-item">
@@ -147,19 +123,6 @@
           <div class="stat-item">
             <span data-stat-value="12" class="stat-value">0</span>
             <span class="stat-label">Prêmios e reconhecimentos</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Client marquee -->
-      <section data-theme="light" data-nav-theme-target="dark" class="s" style="padding-block: 4rem;">
-        <div data-marquee>
-          <div data-marquee-track>
-            <span class="footer-marquee-item">Cliente A</span>
-            <span class="footer-marquee-item">Cliente B</span>
-            <span class="footer-marquee-item">Cliente C</span>
-            <span class="footer-marquee-item">Cliente D</span>
-            <span class="footer-marquee-item">Cliente E</span>
           </div>
         </div>
       </section>
@@ -188,18 +151,6 @@
           <div class="footer-col">
             <span class="footer-col-title">Contato</span>
             <a href="mailto:hello@cobra.art.br" class="footer-link">hello@cobra.art.br</a>
-          </div>
-        </div>
-
-        <div class="footer-marquee-w">
-          <div data-marquee>
-            <div data-marquee-track>
-              <span class="footer-marquee-item">Cobra Estúdio</span>
-              <span class="footer-marquee-item">Design</span>
-              <span class="footer-marquee-item">Branding</span>
-              <span class="footer-marquee-item">Produto</span>
-              <span class="footer-marquee-item">Web</span>
-            </div>
           </div>
         </div>
 

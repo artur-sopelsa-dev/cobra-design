@@ -6,15 +6,21 @@ import { initMarquees } from './components/marquee';
 import { initCountdowns } from './components/countdown';
 import { initAccordions } from './components/accordion';
 import { initHorizontalScrollSections } from './components/horizontalScroll';
+import { initHeroPin } from './components/heroPin';
+import { initRevealSweeps } from './components/revealSweep';
+import { initStatsCounters } from './components/statsCounter';
 
 function init() {
   initLenis();
   initNav();
+  initHeroPin();
   initSplitTextReveals();
+  initRevealSweeps();
   initMarquees();
   initCountdowns();
   initAccordions();
   initHorizontalScrollSections();
+  initStatsCounters();
 }
 
 if (document.readyState === 'loading') {

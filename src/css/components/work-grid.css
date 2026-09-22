@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Work grid — project cards (Work page + Home "selected work" reel)
+   ========================================================================== */
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.work-card {
+  display: block;
+  position: relative;
+}
+
+.work-card-media {
+  aspect-ratio: 4 / 3;
+  border-radius: 0.75rem;
+  overflow: clip;
+  background: linear-gradient(155deg, var(--color-ink-tint-2), var(--color-ink));
+  transition: transform var(--anim-default);
+}
+
+.work-card:hover .work-card-media {
+  transform: scale(1.02);
+}
+
+.work-card-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.work-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.work-card-tag {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-grey-2);
+}
+
+.work-reel-card {
+  width: 26rem;
+  max-width: 80vw;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
